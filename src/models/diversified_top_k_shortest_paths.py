@@ -1,4 +1,5 @@
 import heapq
+import googlemaps
 from typing import List, Dict, Tuple
 
 class DiversifiedTopKShortestPaths:
@@ -6,6 +7,7 @@ class DiversifiedTopKShortestPaths:
         self.graph = graph
         self.similarity_threshold = similarity_threshold
         self.k = k
+        self.gmaps = googlemaps.Client(key="AIzaSyAspJAIzFtVEWwOYAoUdJU0eLGrDssz1jk")
 
     def similarity(self, path1: List[str], path2: List[str]) -> float:
         # Implement a similarity function (e.g., Jaccard similarity) 
@@ -53,3 +55,73 @@ class DiversifiedTopKShortestPaths:
                     break
 
         return diversified_paths
+    
+    def get_live_data(self, start_coords: Tuple[float, float], end_coords: Tuple[float, float]) -> Dict[str, float]:
+        """
+        Fetch live traffic and road data from Google Maps.
+        """
+        print(f"Fetching live data for {start_coords} to {end_coords}...")
+        try:
+            directions = self.gmaps.directions(
+                origin=start_coords,
+                destination=end_coords,
+                mode="driving",
+                departure_time="now"  # For live traffic
+            )
+            if not directions:
+                return {"traffic_density": 1, "construction_zone": 0, "road_width": 2}  # Default values
+
+            # Parse traffic density and check for construction zones
+            legs = directions[0]["legs"][0]
+            traffic_density = legs.get("duration_in_traffic", {}).get("value", legs["duration"]["value"])
+            road_width = 2  # Assume car and motorcycle-friendly by default (adjust as needed)
+
+            # Example: Identify construction zones from warnings (if available in the API)
+            construction_zone = any("construction" in step["html_instructions"].lower()
+                                     for step in legs["steps"])
+
+            return {
+                "traffic_density": traffic_density,
+                "construction_zone": 1 if construction_zone else 0,
+                "road_width": road_width,
+            }
+        except Exception as e:
+            print(f"Error fetching Google Maps data: {e}")
+            return {"traffic_density": 1, "construction_zone": 0, "road_width": 2}  # Default fallback
+
+    def calculate_path_weight(self, path: List[str], raw_data: Dict[str, Dict]):
+        """
+        Calculate the weight for a path based on live data.
+        """
+        print(f"Calculating weight for path: {path}")
+        total_weight = 0
+        for i in range(len(path) - 1):
+            start_node = raw_data["nodes"][path[i]]
+            end_node = raw_data["nodes"][path[i + 1]]
+
+            # Fetch live data for the edge
+            live_data = self.get_live_data(
+                start_coords=(start_node["location"][0], start_node["location"][1]),
+                end_coords=(end_node["location"][0], end_node["location"][1])
+            )
+
+            # Example weight calculation
+            weight = (live_data["traffic_density"] * 0.5 +
+                      live_data["construction_zone"] * 2 +
+                      (3 if live_data["road_width"] < 2 else 0))  # Penalize narrow roads
+
+            total_weight += weight
+
+        return total_weight
+
+    def suggest_best_path(self, paths: List[List[str]], raw_data: Dict[str, Dict]) -> List[str]:
+        """
+        Suggest the best path based on calculated weights.
+        """
+        print("Suggesting best path...")
+        weighted_paths = [
+            (path, self.calculate_path_weight(path, raw_data)) for path in paths
+        ]
+        # Sort paths by weight (ascending order for best suggestion)
+        weighted_paths.sort(key=lambda x: x[1])
+        return weighted_paths[0][0]
