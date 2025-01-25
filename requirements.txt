@@ -1,0 +1,5 @@
+geopy
+requests
+python-dotenv
+googlemaps
+flask
