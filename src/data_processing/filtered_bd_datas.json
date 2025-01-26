@@ -1,0 +1,480 @@
+{
+  "upazillas": {
+    "type": "table",
+    "name": "upazilas",
+    "database": "bd_geo_code",
+    "data": [
+      {
+        "id": "365",
+        "name": "Savar",
+        "bn_name": "সাভার",
+        "url": "savar.dhaka.gov.bd"
+      },
+      {
+        "id": "366",
+        "name": "Dhamrai",
+        "bn_name": "ধামরাই",
+        "url": "dhamrai.dhaka.gov.bd"
+      },
+      {
+        "id": "367",
+        "name": "Keraniganj",
+        "bn_name": "কেরাণীগঞ্জ",
+        "url": "keraniganj.dhaka.gov.bd"
+      },
+      {
+        "id": "368",
+        "name": "Nawabganj",
+        "bn_name": "নবাবগঞ্জ",
+        "url": "nawabganj.dhaka.gov.bd"
+      },
+      {
+        "id": "369",
+        "name": "Dohar",
+        "bn_name": "দোহার",
+        "url": "dohar.dhaka.gov.bd"
+      }
+    ]
+  },
+  "unions": {
+    "type": "table",
+    "name": "unions",
+    "database": "bd_geo_code",
+    "data": [
+      {
+        "id": "3271",
+        "upazilla_id": "365",
+        "name": "Savar",
+        "bn_name": "সাভার",
+        "url": "savarup.dhaka.gov.bd"
+      },
+      {
+        "id": "3272",
+        "upazilla_id": "365",
+        "name": "Birulia",
+        "bn_name": "বিরুলিয়া",
+        "url": "birulia.dhaka.gov.bd"
+      },
+      {
+        "id": "3273",
+        "upazilla_id": "365",
+        "name": "Dhamsona",
+        "bn_name": "ধামসোনা",
+        "url": "dhamsonaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3274",
+        "upazilla_id": "365",
+        "name": "Shimulia",
+        "bn_name": "শিমুলিয়া",
+        "url": "shimuliaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3275",
+        "upazilla_id": "365",
+        "name": "Ashulia",
+        "bn_name": "আশুলিয়া",
+        "url": "ashuliaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3276",
+        "upazilla_id": "365",
+        "name": "Yearpur",
+        "bn_name": "ইয়ারপুর",
+        "url": "yearpurup.dhaka.gov.bd"
+      },
+      {
+        "id": "3277",
+        "upazilla_id": "365",
+        "name": "Vakurta",
+        "bn_name": "ভাকুর্তা",
+        "url": "vakurtaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3278",
+        "upazilla_id": "365",
+        "name": "Pathalia",
+        "bn_name": "পাথালিয়া",
+        "url": "pathaliaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3279",
+        "upazilla_id": "365",
+        "name": "Bongaon",
+        "bn_name": "বনগাঁও",
+        "url": "bongaonup.dhaka.gov.bd"
+      },
+      {
+        "id": "3280",
+        "upazilla_id": "365",
+        "name": "Kaundia",
+        "bn_name": "কাউন্দিয়া",
+        "url": "kaundiaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3281",
+        "upazilla_id": "365",
+        "name": "Tetuljhora",
+        "bn_name": "তেঁতুলঝোড়া",
+        "url": "tetuljhora.dhaka.gov.bd"
+      },
+      {
+        "id": "3282",
+        "upazilla_id": "365",
+        "name": "Aminbazar",
+        "bn_name": "আমিনবাজার",
+        "url": "aminbazar.dhaka.gov.bd"
+      },
+      {
+        "id": "3283",
+        "upazilla_id": "366",
+        "name": "Chauhat",
+        "bn_name": "চৌহাট",
+        "url": "chauhatup.dhaka.gov.bd"
+      },
+      {
+        "id": "3284",
+        "upazilla_id": "366",
+        "name": "Amta",
+        "bn_name": "আমতা",
+        "url": "amtaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3285",
+        "upazilla_id": "366",
+        "name": "Balia",
+        "bn_name": "বালিয়া",
+        "url": "baliaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3286",
+        "upazilla_id": "366",
+        "name": "Jadabpur",
+        "bn_name": "যাদবপুর",
+        "url": "jadabpurup.dhaka.gov.bd"
+      },
+      {
+        "id": "3287",
+        "upazilla_id": "366",
+        "name": "Baisakanda",
+        "bn_name": "বাইশাকান্দা",
+        "url": "baisakandaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3288",
+        "upazilla_id": "366",
+        "name": "Kushura",
+        "bn_name": "কুশুরা",
+        "url": "kushuraup.dhaka.gov.bd"
+      },
+      {
+        "id": "3289",
+        "upazilla_id": "366",
+        "name": "Gangutia",
+        "bn_name": "গাংগুটিয়া",
+        "url": "gangutiaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3290",
+        "upazilla_id": "366",
+        "name": "Sanora",
+        "bn_name": "সানোড়া",
+        "url": "sanoraup.dhaka.gov.bd"
+      },
+      {
+        "id": "3291",
+        "upazilla_id": "366",
+        "name": "Sutipara",
+        "bn_name": "সূতিপাড়া",
+        "url": "sutiparaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3292",
+        "upazilla_id": "366",
+        "name": "Sombhag",
+        "bn_name": "সোমভাগ",
+        "url": "sombhagup.dhaka.gov.bd"
+      },
+      {
+        "id": "3293",
+        "upazilla_id": "366",
+        "name": "Vararia",
+        "bn_name": "ভাড়ারিয়া",
+        "url": "varariaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3294",
+        "upazilla_id": "366",
+        "name": "Dhamrai",
+        "bn_name": "ধামরাই",
+        "url": "dhamraiup.dhaka.gov.bd"
+      },
+      {
+        "id": "3295",
+        "upazilla_id": "366",
+        "name": "Kulla",
+        "bn_name": "কুল্লা",
+        "url": "kullaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3296",
+        "upazilla_id": "366",
+        "name": "Rowail",
+        "bn_name": "রোয়াইল",
+        "url": "rowailup.dhaka.gov.bd"
+      },
+      {
+        "id": "3297",
+        "upazilla_id": "366",
+        "name": "Suapur",
+        "bn_name": "সুয়াপুর",
+        "url": "suapurup.dhaka.gov.bd"
+      },
+      {
+        "id": "3298",
+        "upazilla_id": "366",
+        "name": "Nannar",
+        "bn_name": "নান্নার",
+        "url": "nannarup.dhaka.gov.bd"
+      },
+      {
+        "id": "3299",
+        "upazilla_id": "367",
+        "name": "Hazratpur",
+        "bn_name": "হযরতপুর",
+        "url": "hazratpurup.dhaka.gov.bd"
+      },
+      {
+        "id": "3300",
+        "upazilla_id": "367",
+        "name": "Kalatia",
+        "bn_name": "কলাতিয়া",
+        "url": "kalatiaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3301",
+        "upazilla_id": "367",
+        "name": "Taranagar",
+        "bn_name": "তারানগর",
+        "url": "taranagarup.dhaka.gov.bd"
+      },
+      {
+        "id": "3302",
+        "upazilla_id": "367",
+        "name": "Sakta",
+        "bn_name": "শাক্তা",
+        "url": "saktaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3303",
+        "upazilla_id": "367",
+        "name": "Ruhitpur",
+        "bn_name": "রোহিতপুর",
+        "url": "ruhitpurup.dhaka.gov.bd"
+      },
+      {
+        "id": "3304",
+        "upazilla_id": "367",
+        "name": "Basta",
+        "bn_name": "বাস্তা",
+        "url": "bastaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3305",
+        "upazilla_id": "367",
+        "name": "Kalindi",
+        "bn_name": "কালিন্দি",
+        "url": "kalindiup.dhaka.gov.bd"
+      },
+      {
+        "id": "3306",
+        "upazilla_id": "367",
+        "name": "Zinzira",
+        "bn_name": "জিনজিরা",
+        "url": "zinziraup.dhaka.gov.bd"
+      },
+      {
+        "id": "3307",
+        "upazilla_id": "367",
+        "name": "Suvadda",
+        "bn_name": "শুভাঢ্যা",
+        "url": "suvaddaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3308",
+        "upazilla_id": "367",
+        "name": "Taghoria",
+        "bn_name": "তেঘরিয়া",
+        "url": "taghoriaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3309",
+        "upazilla_id": "367",
+        "name": "Konda",
+        "bn_name": "কোন্ডা",
+        "url": "kondaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3310",
+        "upazilla_id": "367",
+        "name": "Aganagar",
+        "bn_name": "আগানগর",
+        "url": "aganagarup.dhaka.gov.bd"
+      },
+      {
+        "id": "3311",
+        "upazilla_id": "368",
+        "name": "Shikaripara",
+        "bn_name": "শিকারীপাড়া",
+        "url": "shikariparaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3312",
+        "upazilla_id": "368",
+        "name": "Joykrishnapur",
+        "bn_name": "জয়কৃষ্ণপুর",
+        "url": "joykrishnapurup.dhaka.gov.bd"
+      },
+      {
+        "id": "3313",
+        "upazilla_id": "368",
+        "name": "Baruakhali",
+        "bn_name": "বারুয়াখালী",
+        "url": "baruakhaliup.dhaka.gov.bd"
+      },
+      {
+        "id": "3314",
+        "upazilla_id": "368",
+        "name": "Nayansree",
+        "bn_name": "নয়নশ্রী",
+        "url": "nayansreeup.dhaka.gov.bd"
+      },
+      {
+        "id": "3315",
+        "upazilla_id": "368",
+        "name": "Sholla",
+        "bn_name": "শোল্লা",
+        "url": "shollaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3316",
+        "upazilla_id": "368",
+        "name": "Jantrail",
+        "bn_name": "যন্ত্রাইল",
+        "url": "jantrailup.dhaka.gov.bd"
+      },
+      {
+        "id": "3317",
+        "upazilla_id": "368",
+        "name": "Bandura",
+        "bn_name": "বান্দুরা",
+        "url": "banduraup.dhaka.gov.bd"
+      },
+      {
+        "id": "3318",
+        "upazilla_id": "368",
+        "name": "Kalakopa",
+        "bn_name": "কলাকোপা",
+        "url": "kalakopaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3319",
+        "upazilla_id": "368",
+        "name": "Bakshanagar",
+        "bn_name": "বক্সনগর",
+        "url": "bakshanagarup.dhaka.gov.bd"
+      },
+      {
+        "id": "3320",
+        "upazilla_id": "368",
+        "name": "Barrah",
+        "bn_name": "বাহ্রা",
+        "url": "barrahup.dhaka.gov.bd"
+      },
+      {
+        "id": "3321",
+        "upazilla_id": "368",
+        "name": "Kailail",
+        "bn_name": "কৈলাইল",
+        "url": "kailailup.dhaka.gov.bd"
+      },
+      {
+        "id": "3322",
+        "upazilla_id": "368",
+        "name": "Agla",
+        "bn_name": "আগলা",
+        "url": "aglaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3323",
+        "upazilla_id": "368",
+        "name": "Galimpur",
+        "bn_name": "গালিমপুর",
+        "url": "galimpurup.dhaka.gov.bd"
+      },
+      {
+        "id": "3324",
+        "upazilla_id": "368",
+        "name": "Churain",
+        "bn_name": "চুড়াইন",
+        "url": "churainup.dhaka.gov.bd"
+      },
+      {
+        "id": "3325",
+        "upazilla_id": "369",
+        "name": "Nayabari",
+        "bn_name": "নয়াবাড়ী",
+        "url": "nayabariup.dhaka.gov.bd"
+      },
+      {
+        "id": "3326",
+        "upazilla_id": "369",
+        "name": "Kusumhathi",
+        "bn_name": "কুসুমহাটি",
+        "url": "kusumhathiup.dhaka.gov.bd"
+      },
+      {
+        "id": "3327",
+        "upazilla_id": "369",
+        "name": "Raipara",
+        "bn_name": "রাইপাড়া",
+        "url": "raiparaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3328",
+        "upazilla_id": "369",
+        "name": "Sutarpara",
+        "bn_name": "সুতারপাড়া",
+        "url": "sutarparaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3329",
+        "upazilla_id": "369",
+        "name": "Narisha",
+        "bn_name": "নারিশা",
+        "url": "narishaup.dhaka.gov.bd"
+      },
+      {
+        "id": "3330",
+        "upazilla_id": "369",
+        "name": "Muksudpur",
+        "bn_name": "মুকসুদপুর",
+        "url": "muksudpurup.dhaka.gov.bd"
+      },
+      {
+        "id": "3331",
+        "upazilla_id": "369",
+        "name": "Mahmudpur",
+        "bn_name": "মাহমুদপুর",
+        "url": "mahmudpurup.dhaka.gov.bd"
+      },
+      {
+        "id": "3332",
+        "upazilla_id": "369",
+        "name": "Bilaspur",
+        "bn_name": "বিলাসপুর",
+        "url": "bilaspurup.dhaka.gov.bd"
+      }
+    ]
+  }
+}
